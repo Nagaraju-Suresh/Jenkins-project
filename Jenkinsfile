@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'docker build -t java-jenkins-docker:latest .'
+                sh 'sudo docker build -t java-jenkins-docker:latest .'
             }
         }
         stage('Docker Run') {
